@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-bg-color: brown;
+  font-size: clamp(0.9375rem, calc(.9119rem + 0.1136vw), 1rem);
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* remove o sublinhado dos links */
+  color: black;
+  /* altera a cor de todos os links das páginas */
+}
+
+main {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/* =========== HEADER ============= */
+header {
+  padding: 5vw 0vw;
+}
+
+header ul {
+  display: flex;
+  gap: 1vw;
+  border: 2px solid #e5e5e5;
+  border-width: 2px;
+  border-radius: 30px;
+  width: fit-content;
+  margin: 3vw auto 2vw auto;
+  padding: 1px 1px;
+}
+
+header ul li a {
+  display: block;
+  padding: 5px 10px 5px 10px;
+}
+
+header ul li a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}
+
+#select {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}
+
+/* ============== BANNER =========== */
+.banner h1 {
+  margin-bottom: 3vw;
+  font-size: 2.7rem;
+}
+.banner h1 span {
+  font-weight: 670;
+}
+.banner p {
+  font-size: 1.2rem;
+  color: #757575;
+  margin-bottom: 10vw;
+}
+
+/* ========= PROJETOS ======== */
+
+.projetos > ul > li{
+  border: 3px solid #e5e5e5;
+  background-color: #FFFFFE;
+  border-radius: 10px;
+  margin-bottom: 5vw;
+  padding: 5vw 5vw;
+  box-shadow: 1px 1px 2px #d1d0d0;
+
+}
+.projetos h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5vw;
+}
+.projetos ul li ul {
+    display: flex;
+    gap: 10px;
+}
+.projetos ul li p {
+  line-height: 1.8rem;
+  text-align: left;
+}
+.projetos ul li ul li {
+  background-color: #e5e5e5;
+  padding: 2px 4px;
+  border-radius: 25px;
+  margin-top: 4vw;
+}
+.projetos ul li ul li p {
+  text-align: center;
+}
+
+/* =================== CONNECT ================ */
+main section.redes ul li {
+  background-color: white;
+  border: 1px solid #757575;
+  /*text-align: center;*/
+    border-radius: 10px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5vw 2vw;
+    margin-bottom: 2vw;
+    border: 2px solid #e5e5e5;
+}
+main section.redes ul li a {
+  font-size: 1.2rem;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section.redes ul li svg {
+  width: 8vw;
+  margin: 0 3vw 0 0;
+
+}
+
+
+/* ============== PROJECTS =========== */
+section.eco>ul>li {
+  background: white;
+  border: 1px solid #dcdcdc;
+  box-shadow: 1px 1px 2px #eeeded;
+  border-radius: 10px;
+  padding: 2vw;
+  margin: 0 0 2vw 0;
+}
+section.eco ul li h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+section.eco ul li p {
+  color: #757575;
+  line-height: 1.5rem;
+  margin-bottom: 5vw;
+}
+section.eco{
+  margin: auto 1vw auto 1vw;
+}
+
+
+
+
+/* ============== FOOTER ============= */
+
+footer p {
+  color: #757575;
+  background: white;
+  border: 1px solid #dfdfdf;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 5vw 15px 5vw;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+  main section.banner,main section.projetos > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    gap: 30px;
+  }
+  main section.banner p{
+    margin-bottom: 3vw;
+  }
+  main section.projetos > ul > li {
+    padding: 2vw;
+  }
+  main section.projetos ul li ul li {
+    margin-top: 1vw;
+  }
+  main section.redes ul {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main section.redes ul li {
+    width: 40vw;
+    padding: 1vw 1vw;
+    
+  }
+  main section.redes ul li svg {
+    width: 2vw;
+  }
+  footer p {
+    max-width: 1000px;
+    margin: 3vw auto 2vw auto;
+  }
+  main {
+    padding: 0 5vw;
+  }
+section.eco{
+  margin: auto 17vw auto 17vw;
+}
+section.eco ul li p {
+  margin-bottom: 1vw;
+}
+
+}
